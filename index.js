@@ -12,9 +12,9 @@ app.use("/api/users", require("./routes/users"));
 app.use("/api/barbers", require("./routes/barbers"));
 app.use("/api/auth", require("./routes/auth"));
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("barber-ui/build"));
-}
+//if (process.env.NODE_ENV === "production") {
+app.use(express.static("barber-ui/build"));
+//}
 
 app.listen(port, () => {
   console.log(`Listening to requests on http://localhost:${port}`);
