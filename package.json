@@ -1,0 +1,26 @@
+{
+  "name": "barber-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "nodemon ./index.js",
+    "build": "cd barber-ui && npm run build",
+    "install-client": "cd barber-ui && npm install",
+    "heroku-postbuild": "cpm run install-client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.2"
+  }
+}
