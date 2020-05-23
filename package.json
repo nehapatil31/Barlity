@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "start": "nodemon ./index.js",
+    "start": "node ./index.js",
     "build": "cd barber-ui && npm run build",
     "install-client": "cd barber-ui && npm install",
     "heroku-postbuild": "npm run install-client && npm run build"
