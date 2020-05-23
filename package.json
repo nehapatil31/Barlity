@@ -8,7 +8,7 @@
     "start": "nodemon ./index.js",
     "build": "cd barber-ui && npm run build",
     "install-client": "cd barber-ui && npm install",
-    "heroku-postbuild": "cpm run install-client && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "keywords": [],
   "author": "",
